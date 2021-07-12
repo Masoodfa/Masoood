@@ -1,6 +1,6 @@
 Feature: WorldCat API Get Test
 
-@getTest
+@get
 Scenario: Get request test
     Given The get API is up and running
     When I hit get end point url

@@ -1,12 +1,5 @@
 package runner;
 
-/*
-* 8. Tags: for grouping of the tests
-* Not: tag{"~@reg"} 
-* And: tag{"@reg","@smoke"}
-* or:  tag{"@reg,@smoke"}
-* */
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -16,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 	
 		features = {"classpath:features/worldcatapi"},
-		glue = "product.worldcatapi",
-		tags = "@post",
+		glue = "worldcatapi.stepdefs", 
+		tags = "@deleteMARC21XML",
 		plugin =
 			{
 					"pretty" , 
@@ -28,9 +21,6 @@ import cucumber.api.junit.Cucumber;
 		dryRun=false
 		
 		)
-public class CucumberTest {
-
-
-
+public class TestRunner {
 
 }
